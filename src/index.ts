@@ -22,9 +22,9 @@ app.get("/health", async (req: Request, res: Response) => {
 app.use("/api/my/user", myUserRouter);
 
 
-const PORT = process.env.PORT || 8001;
+// const PORT = process.env.PORT || 8001;
 
-app.listen(PORT, () => {
+app.listen(7000, () => {
   // Start the server and listen on the specified port
   console.log(`Server is running on http://localhost:${PORT}`); // Log a message indicating the server is running
 });
